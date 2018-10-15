@@ -1,12 +1,12 @@
-name_Workwook = 'FLOW Operation and support report ASAP 7.0.2 JAMU66, WASS133 2018-10-08.xlsx'
-name_Sheet = 'JAMU WEEK'
+name_Workwook = 'FLOW Operation and support report ASAP 7.0.2 JAMU66, WASS133 2018-10-15.xlsx'
+name_Sheet = 'WASS WEEK'
 
 import pandas as pd
 import numpy as np
 import CountFailedBar as cfb
-rango = 6004 - 5163 #El rango es la resta de las casillas donde se encuentra la informacion
+rango = 2845 - 2589 #El rango es la resta de las casillas donde se encuentra la informacion
 
-data = cfb.CountFailedBar(name_Workwook, name_Sheet, 5161, rango)
+data = cfb.CountFailedBar(name_Workwook, name_Sheet, 2587, rango)
 '''el numero que aparece aqui son las lineas
 que la lectura de datos debe ignorar, siempre se
 restaran dos casillas al limite inferior del rango'''
@@ -42,9 +42,9 @@ excel_account_513 = pd.DataFrame(account_513)
 excel_account_520 = pd.DataFrame(account_520)
 excel_account_another = pd.DataFrame(account_another)
 
-excel_null_513.to_excel('null_513.xlsx')
-excel_null_520.to_excel('nul_520.xlsx')
-excel_null_another.to_excel('null_another.xlsx')
-excel_account_513.to_excel('account_513.xlsx')
-excel_account_520.to_excel('account_520.xlsx')
-excel_account_another.to_excel('account_another.xlsx')
+excel_null_513.to_excel('null_513_WASS.xlsx')
+excel_null_520.to_excel('nul_520_WASS.xlsx')
+excel_null_another.to_excel('null_another_WASS.xlsx')
+excel_account_513.to_excel('account_513_WASS.xlsx')
+excel_account_520.to_excel('account_520_WASS.xlsx')
+excel_account_another.to_excel('account_another_WASS.xlsx')
