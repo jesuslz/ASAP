@@ -1,6 +1,6 @@
 import prueba as pr 
-name_Workwook = 'FLOW Operation and support report ASAP 7.0.2 JAMU66, WASS133 2018-10-15.xlsx'
-name_Sheet = 'WASS WEEK'
+name_Workwook = 'FLOW Operation and support report ASAP 7.0.2 JAMU66, WASS133 2018-10-22.xlsx'
+name_Sheet = 'wass week'
 '''
 object1 = pr.PerformancePandas(name_Workwook, name_Sheet)
 encontrados = object1.busqueda('WASS BAR_COMG')#regresa estadisticas de las coincidencias encontradas
