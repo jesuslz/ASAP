@@ -73,6 +73,7 @@ class PerformancePandas(Pce.Performance):
         return np.where(self.data_pandas == self.encontrados[0][0])#siempre es la posicion 0,0 porque la lista ya esta ordenada
     
     def obtener_data(self, index):
+        
         self.tabla = []
         for i in self.data_pandas[index:, 0]:
             i = str(i)

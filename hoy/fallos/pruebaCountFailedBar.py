@@ -1,12 +1,12 @@
-name_Workwook = 'FLOW Operation and support report ASAP 7.0.2 JAMU66, WASS133 2018-10-15.xlsx'
+name_Workwook = 'FLOW Operation and support report ASAP 7.0.2 JAMU66, WASS133 2018-11-12.xlsx'
 name_Sheet = 'WASS WEEK'
 
 import pandas as pd
 import numpy as np
 import CountFailedBar as cfb
-rango = 2845 - 2589 #El rango es la resta de las casillas donde se encuentra la informacion
+rango = 3104 - 2626 #El rango es la resta de las casillas donde se encuentra la informacion
 
-data = cfb.CountFailedBar(name_Workwook, name_Sheet, 2587, rango)
+data = cfb.CountFailedBar(name_Workwook, name_Sheet, 2624, rango)
 '''el numero que aparece aqui son las lineas
 que la lectura de datos debe ignorar, siempre se
 restaran dos casillas al limite inferior del rango'''
